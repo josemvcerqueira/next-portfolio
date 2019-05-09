@@ -1,16 +1,12 @@
-import Link from "next/link";
+import Layout from "../components/Layout";
 
 export default () => (
-	<div>
-		<h1>About</h1>
-		<Link href="/">
-			<a>Go to home</a>
-		</Link>
+	<Layout title="About">
 		<p>Javascript programmer</p>
 		<img
 			style={{ width: "10rem", height: "auto" }}
 			src="/static/javascriptlogo.png"
 			alt="JavaScript Logo"
 		/>
-	</div>
+	</Layout>
 );
