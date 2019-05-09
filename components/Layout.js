@@ -16,10 +16,6 @@ export default ({ children, title }) => (
 	<div className="root">
 		<Head>
 			<title>NextPortfolio</title>
-			<link
-				rel="stylesheet"
-				href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"
-			/>
 		</Head>
 		<header>
 			<Link href="/">
@@ -32,20 +28,11 @@ export default ({ children, title }) => (
 				<a>Hire Me</a>
 			</Link>
 		</header>
-		<main>
-			<h1>{title}</h1>
-			{children}
-		</main>
+		<h1>{title}</h1>
+		{children}
 		<footer>&copy; {new Date().getFullYear()}</footer>
 		<style jsx>{`
 			.root {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				flex-direction: column;
-			}
-
-			main {
 				display: flex;
 				justify-content: center;
 				align-items: center;
